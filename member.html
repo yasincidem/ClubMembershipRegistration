@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Member</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+   <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+  
+  <style></style>
+</head>
+
+<body>
+
+<script>
+$(document).ready(function () {
+	$("#profileButton").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#showProfile").offset().top
+		}, 400);
+	});
+	
+	$("#eventsButton").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#showEvents").offset().top
+		}, 400);
+	});
+});
+</script>
+
+<nav class="navbar  navbar-expand-lg navbar-light bg-light " >	
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto ">
+					<li class="nav-item ">
+						<a class="nav-link" href="#showProfile" id="profileButton">Profile </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#showEvents" id="eventsButton">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="update.html">Update Profile</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	
+
+    <div class=" container">
+	
+    	
+     		<section >
+	     	 	<div class="table-responsive-sm container">
+                  <table class="table table-user-information " >
+                    <tbody>
+                      <tr id="showProfile"	>
+                        <td>E-mail:</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Name:</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Surname</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Date of Birth</td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Gender </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Street</td>
+                        <td> </td>
+                      </tr>
+                        <td>Province</td>
+                        <td> <br>
+                        </td>
+                      </tr>
+                      </tr>
+                        <td>ZipCode</td>
+                        <td> 
+                        </td>
+                      </tr>
+                      </tr>
+                        <td>Job</td>
+                        <td> 
+                        </td>
+                      </tr>
+                        <td>Interests</td> 
+                      </tr> 
+                    </tbody>
+                  </table>
+                </div>
+			</section> 
+    
+     <br> <br><br>
+
+     <section id="showEvents">
+
+				<div class="row">
+
+					<div class="col-lg-4">
+					    <div class="card">
+					      <img class="card-img-top img-fluid" src="https://news.nationalgeographic.com/content/dam/news/2017/12/27/january-sky-guide-2018/02-sky-guide-january-2018.adapt.710.1.jpg" alt="Card image cap">
+					        <div class="card-body"> <br>
+					          <h5 class="card-title">July 15: Moon Meets Venus</h5> <hr>
+					          <a href="https://news.nationalgeographic.com/2017/12/top-skywatching-events-2018-eclipses-meteors-planets-astronomy/" class="btn btn-primary">Click to learn more</a>
+					       </div>
+					    </div>
+					  </div>
+					  <div class="col-lg-4">
+					    <div class="card">
+					      <img class="card-img-top img-fluid" src="https://www.pe.com/wp-content/uploads/migration/nve/nve54l-moon07.jpg?w=620"  alt="Card image cap">
+					        <div class="card-body">
+					          <h5 class="card-title">July 27: Total Lunar Eclipse</h5> <hr>
+					          <a href="https://news.nationalgeographic.com/2017/12/top-skywatching-events-2018-eclipses-meteors-planets-astronomy/" class="btn btn-primary">Click to learn more</a>
+					       </div>
+					    </div>
+					  </div>  
+					  <div class="col-lg-4">
+					    <div class="card">
+					      <img class="card-img-top img-fluid" src="https://news.nationalgeographic.com/content/dam/news/2017/12/27/january-sky-guide-2018/03-sky-guide-january-2018.adapt.710.1.jpg" alt="Card image cap">
+					        <div class="card-body"> <br>
+					          <h5 class="card-title">July 27: Mars at Its Best</h5> <hr>
+					          <a href="https://news.nationalgeographic.com/2017/12/top-skywatching-events-2018-eclipses-meteors-planets-astronomy/" class="btn btn-primary">Click to learn more</a>
+					       </div>
+					    </div>
+					  </div>    					
+				</div>
+				<br> <br>
+				<div class="row">
+					<div class="col-lg-4">
+					    <div class="card">
+					      <img class="card-img-top img-fluid" src="https://www.technobuffalo.com/wp-content/uploads/2017/01/partial_solar_eclipse_tromso_2011-05-31-300x250@2x.jpg" alt="Card image cap">
+					        <div class="card-body">
+					          <h5 class="card-title">August 11: Partial Solar Eclipse</h5> <hr>
+					          <a href="https://news.nationalgeographic.com/2017/12/top-skywatching-events-2018-eclipses-meteors-planets-astronomy/" class="btn btn-primary">Click to learn more</a>
+					       </div>
+					    </div>
+					  </div>
+					  <div class="col-lg-4">
+					    <div class="card">
+					      <img class="card-img-top img-fluid" src="https://www.newsmax.com/Newsmax/files/2f/2f417028-20a3-4a7f-8962-9e325c0a85c7.jpg" alt="Card image cap">
+					        <div class="card-body"> 
+					          <h5 class="card-title">August 12-13: Perseid Meteor Shower</h5> <hr>
+					          <a href="https://news.nationalgeographic.com/2017/12/top-skywatching-events-2018-eclipses-meteors-planets-astronomy/" class="btn btn-primary">Click to learn more</a>
+					       </div>
+					    </div>
+					  </div> 
+					  <div class="col-lg-4">
+					    <div class="card">
+					      <img class="card-img-top img-fluid" src="https://news.nationalgeographic.com/content/dam/news/2017/12/27/january-sky-guide-2018/01-sky-guide-january-2018.adapt.1190.1.jpg	" alt="Card image cap">
+					        <div class="card-body"><br>
+					          <h5 class="card-title">December 12: Comet Encounter</h5> <hr>
+					          <a href="https://news.nationalgeographic.com/2017/12/top-skywatching-events-2018-eclipses-meteors-planets-astronomy/" class="btn btn-primary">Click to learn more</a>
+					       </div>
+					    </div>
+					  </div>   					
+				</div>
+		</section>
+
+		</div>			
+
+
+</body>
+</html>
