@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg  sticky-top navbar-light " style="background-color: #8cece2 ; text-align: center; padding-left: 550px">
+       <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-item nav-link " id="showProfile" href="member.html#showProfile">Show profile</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-item nav-link" id="showEvents" href="member.html#showEvents">Show events </a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-item nav-link active" href="update.html">Update Profile <span class="sr-only">(current)</span></a></a>
+          </li>
+        
+        </ul>
+      </div>
+     </nav>  <br> <br>
+
+     <div class="container">
+    <h1 style="text-align: center;">Edit Profile</h1>
+    <hr>
+  <div class="row">
+      <!-- left column -->
+       <div class="col-md-3">
+        <div class="text-center">
+  
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          This is an <strong>.alert</strong>. Use this to show important messages to the user.
+        </div>
+        <h3>Personal info</h3>
+        
+        <form class="form-horizontal" role="form">
+           <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="form-control" required type="email"  name="email" type="Email" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Password:</label>
+            <div class="col-lg-8">
+              <input class="form-control" required type="password" name="password" type="password" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" required type="text" name="firstname" type="name" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" required type="text" name="lastname" type="name" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Date of Birth:</label>
+            <div class="col-lg-8">
+              <input class="form-control" required type="Date" name="bday" type="Date" >
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <label class="col-md-3 control-label">Street:</label>
+            <div class="col-md-8">
+              <input class="form-control" required type="text" name="street" type="Street" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Province</label>
+            <div class="col-md-8">
+              <input class="form-control" required type="text" name="province" type="Province" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Zip Code</label>
+            <div class="col-md-8">
+              <input class="form-control" required type="zipcode" name="zipcode" type="Zip" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Job</label>
+            <div class="col-md-8">
+              <input class="form-control" required type="text" name="job" type="text" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Interest</label>
+            <div class="col-md-8">
+              <input class="form-control" required type="text" name="interests" type="text" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="button" class="btn btn-primary" value="Save Changes">
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
+
+
+
+
+
+</body>
+</html>
