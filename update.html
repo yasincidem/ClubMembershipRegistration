@@ -48,12 +48,7 @@
       
       <!-- edit form column -->
       <div class="col-md-9 personal-info">
-        <div class="alert alert-info alert-dismissable">
-          <a class="panel-close close" data-dismiss="alert">×</a> 
-          <i class="fa fa-coffee"></i>
-          This is an <strong>.alert</strong>. Use this to show important messages to the user.
-        </div>
-        <h3>Personal info</h3>
+        
         
         <form class="form-horizontal" role="form">
            <div class="form-group">
@@ -106,17 +101,26 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="col-md-3 control-label">Interest</label>
+            <div class="col-md-8">
+              <input class="form-control" required type="text" name="interests" type="text" >
+            </div>
+          </div>
+          <div class="form-group">
             <label class="col-md-3 control-label">Job</label>
             <div class="col-md-8">
               <input class="form-control" required type="text" name="job" type="text" >
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-3 control-label">Interest</label>
-            <div class="col-md-8">
-              <input class="form-control" required type="text" name="interests" type="text" >
-            </div>
+            <label class="col-md-3 control-label">Membership Type</label>
+             <select name="membershipType">
+                  <option  value="Female">Bronze (free) </option>
+                  <option  value="Male">Golden (5$ per month) </option>
+                  <option  value="Male">Platinium (15$ per month)</option>
+                </select> 
           </div>
+          
           <div class="form-group">
             <label class="col-md-3 control-label"></label>
             <div class="col-md-8">
