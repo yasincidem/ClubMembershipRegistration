@@ -8,81 +8,159 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  
 </head>
 <body>
 
 <div class="container">
 	 <div class="row">
-	 	<div class="col-lg">
-	 		<form class="signup" style="margin: 125px auto; width:250px;" method="get">
-	 			 <h2 class="form-signin-heading">Let's sign up</h2> </br>
+	   <div class="col-md-10 mx-auto">
+	   <h1 class="display-3">Sign Up</h1><br>
+	   <form id="form" method="POST">
+        <div class="form-group row">
+			<div class="col-sm-6">
+				<label for="inputEmail">E-mail</label>
+				<input type="email" id="inputEmail" class="form-control" name="email" placeholder="E-mail" required="required" autofocus> </br>
 
-	 			 <label for="inputEmail" class="sr-only">Email address</label> </br>
-        		 <input type="email" id="inputEmail" name="email" placeholder="E-mail address" required autofocus> </br>
+			</div>
+			<div class="col-sm-6">
+				<label for="inputPassword">Password</label> </br>
+				<input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required="required"  > </br>
 
-        		 <label for="inputPassword" class="sr-only">Password</label> </br>
-       			 <input type="password" id="inputPassword" name="password" placeholder="Password" required type="Password" > </br>
+			</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-6">
+					<label for="inputFirstName"> First Name </label> </br>
+					<input type="name" id="inputFirstName" class="form-control" name="firstname" placeholder="First name" required="required" ></br>
 
-       			 <label for="inputFirstName" class="sr-only"> First Name </label> </br>
-       			 <input type="name" id="inputFirstName" name="firstname" placeholder="First name" required type ="text"></br>
+				</div>
+				<div class="col-sm-6">
+					<label for="inputLastName"> Last Name </label></br>
+					<input type="name" id="inputLastName" class="form-control" name="lastname" placeholder="Last name" required ></br>
 
-       			 <label for="inputLastName" class="sr-only"> Last Name </label></br>
-       			 <input type="name" id="input" name="lastname" placeholder="Last name" required type="text"></br>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-6">
+					<label for="inputStreet"> Street </label></br>
+					<input type="street" id="inputStreet" class="form-control" name="street" placeholder="Street" required ></br>
 
-				 <label for="inputStreet" class="sr-only"> Street </label></br>
-       			 <input type="street" id="inputStreet" name="street" placeholder="Street" required type="street"></br>
+				</div>
+				<div class="col-sm-3">
+					<label for="inputProvince"> Province </label></br>
+					<input type="province" id="inputProvince" class="form-control" name="province" placeholder="Province" required ></br>
 
-				 <label for="inputProvince" class="sr-only"> Province </label></br>
-       			 <input type="province" id="inputProvince" name="province " placeholder="Province" required type="province"></br>
+				</div>
+				<div class="col-sm-3">
+					<label for="inputZipCode"> Zip Code </label></br>
+					<input type="zip" id="inputZipCode" class="form-control" name="zipcode" placeholder="Zip code" required></br>
 
-				 <label for="inputZipCode" class="sr-only"> Zip Code </label></br>
-       			 <input type="zip" id="inputZipCode" name="zip code" placeholder="Zip code" required type="zip"></br>
- 				
- 				 <label for="bday"  class="sr-only">Birthday</label> </br>
-        		 <input  type="date" required type="date" name="bday"></br></br>
-			   	    
-			     <label for="gender" style="margin-right: 15px"> Gender</label> 
-			          <select name="gender" required type= gender>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-6">
+					<label for="inputBirthdate">Birthdate</label> </br>
+					<input id="inputBirthdate" type="date" class="form-control" name="birthdate" required></br></br>
+
+				</div>
+				<div class="col-sm-6">
+					 <label for="inputGender"> Gender</label> 
+			          <select id="inputGender" name="gender" class="form-control" required >
 			            <option  value="Female">Female</option>
 			            <option  value="Male">Male</option>
 			            <option  value="Other">Other</option>
 			          </select> </br>
-
-			     <label for="magazine" style="margin-right: 15px; margin-top: 5px;"> Choose your favourite  magazine</label> 
-			          <select name="magazine" >
-			            <option  value="Female">All About Space</option>
-			            <option  value="Male">Astronomy Now</option>
-			            <option  value="Male">BBC Sky at Night</option>
-			            <option  value="Male">Mercury</option>
-			            <option  value="Male">Night Sky</option>
-			            <option  value="Male">Minor Planet Circulars</option>
-			            <option  value="Other">Spaceflight</option>
-			            <option  value="Male">The Telescope</option>
-			            <option  value="Other">Urania – Postępy Astronomii</option>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-6">
+					<label for="inputMagazine"> Choose your favourite  magazine</label> 
+			          <select id="inputMagazine" name="magazine" class="form-control" required >
+			            <option  value="0">All About Space</option>
+			            <option  value="1">Astronomy Now</option>
+			            <option  value="2">BBC Sky at Night</option>
+			            <option  value="3">Mercury</option>
+			            <option  value="4">Night Sky</option>
+			            <option  value="5">Minor Planet Circulars</option>
+			            <option  value="6">Spaceflight</option>
+			            <option  value="7">The Telescope</option>
+			            <option  value="8">Urania - Postepy Astronomii</option>
 			          </select> </br></br>
-
-			     <label for="membershipType" style="margin-right: 15px"> Select your membership type</label> 
-			          <select name="membershipType">
-			            <option  value="Female">Bronze (free) </option>
-			            <option  value="Male">Golden (5$ per month) </option>
-			            <option  value="Male">Platinium (15$ per month)</option>
+				</div>
+				<div class="col-sm-6">
+					 <label for="inputMembershipType" > Select your membership type</label> 
+			          <select name="membershipType" id="inputMembershipType" class="form-control" required >
+			            <option  value="Bronze">Bronze (free) </option>
+			            <option  value="Golden">Golden (5$ per month) </option>
+			            <option  value="Platinium">Platinium (15$ per month)</option>
 			          </select> </br>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-6">
+					<label for="inputInterests"> Interests </label></br>
+					<input type="Other" id="inputInterests" class="form-control" name="interests" placeholder="Interests" required></br>
 
+				</div>
+				<div class="col-sm-6">
+					<label for="inputJob"> Job </label></br>
+					<input type="Other" id="inputJob" class="form-control" name="job" placeholder="Job" required></br> </br>
 
-				 <label for="inputInterests" class="sr-only"> Interests </label></br>
-       			 <input type="Other" id="inputInterests" name="interests" placeholder="Interests" required="text"></br>
-
-				 <label for="inputJob" class="sr-only"> Job </label></br>
-       			 <input type="Other" id="inputJob" name="job" placeholder="Job" required="text"></br> </br>
-
-	 		 <button class="btn btn-lg btn-primary btn-block" type="submit" href="member.html" style="margin-bottom: 20px">Sign up</button>
-
-	 		</form>
-	 		
-	 	</div>
-	 </div>
+				</div>
+			</div>
+			
+			<button type="submit" class="btn btn-primary px-4 float-right" id="button">Save</button>
+    </form>
+	</div>
+	</div>
 </div>
 
+<script>
+ $(function(){				
+        $('#form').submit(function(e){
+           
+            console.log('select_link clicked');
+                    
+		var data = {};
+		data.email = $('#inputEmail').val();
+		data.password = $('#inputPassword').val();
+		data.firstname = $('#inputFirstName').val();
+		data.lastname = $('#inputLastName').val();
+		data.street = $('#inputStreet').val();
+		data.province = $('#inputProvince').val();
+		data.zipcode = $('#inputZipCode').val();
+		data.birthdate = $('#inputBirthdate').val();
+		data.gender = $('#inputGender').val();
+		data.magazine = $('#inputMagazine').val();
+		data.membershipType = $('#inputMembershipType').val();
+		data.interests = $('#inputInterests').val();
+		data.job = $('#inputJob').val();
+		
+		console.log(data);
+		$.ajax({
+			type: 'POST',
+			data: JSON.stringify(data),
+		    contentType: 'application/json',
+			url: 'http://localhost:3000/signup',						
+			success: function(data) {
+				console.log('success');
+				console.log(JSON.stringify(data));
+			},
+			statusCode: {
+				200: function() {
+					window.location.href = 'member.html';
+				}
+			}
+        });
+		 e.preventDefault();
+		
+
+    });		
+ });
+
+</script>
 
 </body>
 </html>
