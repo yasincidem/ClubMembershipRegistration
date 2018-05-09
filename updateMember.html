@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Member</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+   <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+  
+  <style></style>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg  sticky-top navbar-light " style="background-color: #8cece2 ; text-align: center; padding-left: 450px">
+       <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-item nav-link " id="memberButton" href="admin.html#showMembers">Show Datas</a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-item nav-link active" id="updateMemberButton" href="updateMember.html">Manage Members <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-item nav-link" id="eventButton" href="admin.html#manageEvents">Manage Events </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-item nav-link" id="magazineButton" href="admin.html#manageMagazines">Manage Magazines </a>
+          </li>
+          
+        </ul>
+      </div>
+     </nav>  <br> <br>
+
+              <div class="container">
+                <div class="row">   
+                    <div class="col-sm-12 col-md-12">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <form class="form-horizontal" method="POST" role="form" action=" ">
+                                    <button type="submit" id="submit" name="button" value="Delete" class="btn btn-danger" onclick="return confirm ('Are you sure you want to delete this user, this cannot be undone?\n\n' + 'Click OK to continue or Cancel to Abort!')"><i class=" fas fa-times "></i> Delete User</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> <br> <br>
+              </div>
+
+
+              <div class="container">
+                 <div class="row">
+                   <div class="col-lg">
+
+
+                    <div class="card text-center">
+
+                         <div class="card-header">
+                                <!-- Nav tabs -->
+                                  <ul class="nav nav-tabs card-header-tabs">
+                                    <li  style="margin-right: 20px" class="nav-item">
+                                      <a class="nav-link active" href="updateMember.html#home" >General Info</a>
+                                    </li>
+                                    <li style="margin-right: 20px"  class="nav-item">
+                                      <a href="updateMember.html#profile" class="nav-link">Edit Account</a>
+                                    </li>
+                         </div>
+
+                        <div class="card-body" id="home">
+                       
+                                <form class="form-horizontal" method="POST" role="form" action=" ">
+                                           <div class="form-group">
+                                              <label for="username" class="col-sm-4 col-md-3 control-label">E-mail:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div>
+
+                                           <div class="form-group">
+                                              <label for="firstName" class="col-sm-4 col-md-3 control-label">First Name:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div> 
+
+                                           <div class="form-group">
+                                              <label for="lastName" class="col-sm-4 col-md-3 control-label">Last Name:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div> 
+
+                                           <div class="form-group">
+                                              <label for="birthDate" class="col-sm-4 col-md-3 control-label">Birth Date:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div> 
+
+
+                                           <div class="form-group">
+                                              <label for="gender" class="col-sm-4 col-md-3 control-label">Gender:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div> 
+
+                                           <div class="form-group">
+                                              <label for="street" class="col-sm-4 col-md-3 control-label">Street:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div> 
+
+                                           <div class="form-group">
+                                              <label for="province" class="col-sm-4 col-md-3 control-label">Province:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div>
+
+                                           <div class="form-group">
+                                              <label for="zipCode" class="col-sm-4 col-md-3 control-label">Zip Code:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div>    
+
+                                           <div class="form-group">
+                                              <label for="job" class="col-sm-4 col-md-3 control-label">Job:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div>  
+
+                                           <div class="form-group">
+                                              <label for="interest" class="col-sm-4 col-md-3 control-label">Interests:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div>  
+
+                                           <div class="form-group">
+                                              <label for="membershipType" class="col-sm-4 col-md-3 control-label">Membership Type:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div>  
+
+                                           <div class="form-group">
+                                              <label for="events" class="col-sm-4 col-md-3 control-label">Events:</label>
+                                                <div class="col-sm-5 col-md-5">
+                                                    <p class="form-control-static"> </p>
+                                                </div>
+                                           </div>  
+                                    </form>
+                              </div>
+                             
+
+                            <div  class="card-body" id="profile">
+
+                                        <form class="form-horizontal" id="admin-edit-user" method="POST" role="form" action=" " >      
+
+                                            <div class="form-group ">
+                                                <label for="inputEmail" class="col-sm-4 col-md-3 control-label">E-mail:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input name="email" type="email" class="form-control" id="inputEmail" placeholder="janedoe@hotmail.com">
+                                               </div>
+                                            </div>
+
+            
+
+                                            <div class="form-group">
+                                                <label for="inputFirstname" class="col-sm-4 col-md-3 control-label">First Name:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="text" name="firstName" class="form-control" id="inputFirstName" placeholder="First Name" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputLastName" class="col-sm-4 col-md-3 control-label">Last Name:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="text" name="lastName" class="form-control" id="inputLastName" placeholder="Last Name" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputBirthDate" class="col-sm-4 col-md-3 control-label">Birth Date:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="Date" name="birthDate" class="form-control" id="inputBirthDate" placeholder="Birth Date" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputGender" class="col-sm-4 col-md-3 control-label">Gender:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="gender" name="gender" class="form-control" id="inputGender" placeholder="Gender" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputStreet" class="col-sm-4 col-md-3 control-label">Street:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="Street" name="street" class="form-control" id="inputStreet" placeholder="Street" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputProvince" class="col-sm-4 col-md-3 control-label">Province:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="text" name="province" class="form-control" id="inputProvince" placeholder="Province" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputZipCode" class="col-sm-4 col-md-3 control-label">Zip Code:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="Zip" name="zipCode" class="form-control" id="inputZipCode" placeholder="Zip Code" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputJob" class="col-sm-4 col-md-3 control-label">Job:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="text" name="job" class="form-control" id="inputJob" placeholder="Job" >        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="inputInterests" class="col-sm-4 col-md-3 control-label">Interests:</label>
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="text" name="interests" class="form-control" id="inputInterests" placeholder="Interests" >        
+                                                </div>
+                                            </div>
+
+            
+
+                                            <p></p>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-4 col-md-4">
+                                                    <input type="hidden" id="edit-user" name="edit-user">
+                                                    <button type="submit" id="submit" name="button" value="Edit Account" class="btn btn-default"><i class="fas fa-sync-alt"></i> Submit Changes</button>
+                                                    <button type="reset" id="reset" name="reset" class="btn btn-primary">Reset </button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                
+                     </div>
+            </div>   
+        </div>
+      </div>
+
+
+
+
+
+
+</body>
+</html>     
